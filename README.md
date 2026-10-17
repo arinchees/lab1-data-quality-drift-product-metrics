@@ -8,12 +8,6 @@
 - `report.docx` — отчёт Word с постановкой, обзором литературы, протоколом, метриками и выводами.
 - [Ноутбук в Google Colab](https://colab.research.google.com/drive/1Q-Pbqna9H0yZ7lUCJM18KFJ3TRyzpzvC?usp=sharing).
 
-## Воспроизведение
-
-1. Откройте ноутбук в Google Colab и выберите GPU **T4**.
-2. Запустите все ячейки сверху вниз. Данные загрузятся непосредственно с Hugging Face; parquet файла в репозитории нет.
-3. Сводные CSV и `summary.json` создаются в `/content/lab_results/`. Эта папка временная и исчезает после сброса среды Colab.
-
 Используется категория `All_Beauty` из [Amazon Reviews 2023](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023), ревизия `749931181c9cdd70bfa6408d8fe8b4ddd6107248`. Метка тональности построена из рейтинга: 1–2 звезды — `NEGATIVE`, 4–5 — `POSITIVE`; 3 звезды исключены. Это прокси-метка, а не ручная разметка тональности.
 
 ## Ключевые результаты
@@ -24,4 +18,4 @@
 
 ## Использование данных
 
-Авторы набора [не назначают формальную лицензию](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/discussions/1) исходным текстам отзывов и предоставляют данные прежде всего для исследований. Исходные тексты и parquet файл в репозиторий не включены.
+Авторы набора (https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023/discussions/1) исходным текстам отзывов и предоставляют данные прежде всего для исследований. Исходные тексты и parquet файл в репозиторий не включены.
